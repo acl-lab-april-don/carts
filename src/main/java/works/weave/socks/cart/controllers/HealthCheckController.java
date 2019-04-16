@@ -30,10 +30,10 @@ public class HealthCheckController {
 
        HealthCheck app = new HealthCheck("carts", "OK", dateNow);
        
-       /*
+       
        HealthCheck database = new HealthCheck("carts-db", "OK", dateNow);
 
-       test from don  */
+       /* test from don  */
 
        try {
           mongoTemplate.executeCommand("{ buildInfo: 1 }");
