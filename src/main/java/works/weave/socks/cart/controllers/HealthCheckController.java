@@ -32,14 +32,14 @@ public class HealthCheckController {
        /*
        HealthCheck database = new HealthCheck("carts-db", "OK", dateNow);
 
-       /* test from don  */
+       test from don  */
 
        try {
           mongoTemplate.executeCommand("{ buildInfo: 1 }");
        } catch (Exception e) {
           database.setStatus("err");
        }
-       */
+       
 
        healthChecks.add(app);
        healthChecks.add(database);
